@@ -1,0 +1,297 @@
+/* General Reset */
+
+
+/* Body and General Layout */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Big Picture Section */
+.num1 {
+  background-image: url("../../assets/back.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 100%;
+  /* background-color: rgb(144, 167, 162); */
+  position: relative;
+  top: 90px;
+  overflow: hidden;
+}
+
+.word-top {
+  width: 50%;
+  position: absolute;
+  left: 50px;
+  top: 50px;
+}
+
+.word-top h1 {
+  color: brown;
+  font-size: 50px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  transition: transform 0.5s ease-out;
+}
+
+.word-top p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: 20px;
+  font-size: 18px;
+  color: white;
+}
+
+/* Hero Section */
+.hero-section {
+  width: 85%;
+  margin: auto;
+  height: 300px;
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #866303;
+  text-align: center;
+  background-color: rgb(224, 224, 42);
+  padding: 30px;
+}
+
+.hero-section h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.learn-more-btn {
+  padding: 10px 30px;
+  font-size: 1.1rem;
+  background-color: #ff6600;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #cc5200;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.why-choose-us h2 {
+  font-size: 2rem;
+  color: rgb(180, 180, 5);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.choose-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.choose-item {
+  text-align: center;
+}
+
+.choose-item img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.choose-item h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.choose-item p {
+  font-size: 1rem;
+}
+
+.choose-item:hover img {
+  transform: scale(1.1);
+}
+
+/* Events Section */
+.events-section {
+  padding: 50px;
+  background-color: #ffffff;
+}
+
+.events-section h2 {
+  color: rgb(146, 146, 2);
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.event-item {
+  text-align: center;
+}
+
+.event-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.event-item h3 {
+  font-size: 1.5rem;
+}
+
+.event-item p {
+  font-size: 1rem;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 50px;
+  background-color: #f1f1f1;
+}
+
+.testimonials-section h2 {
+  color: rgb(226, 150, 35);
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.testimonial {
+  text-align: center;
+}
+
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.testimonial p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.testimonial span {
+  font-style: italic;
+  color: #555;
+}
+
+/* Call to Action Section */
+.cta-section {
+  padding: 50px;
+  background-color: #dbc606;
+  color: white;
+  text-align: center;
+}
+
+.cta-section h2 {
+  color: #a76d03;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 12px 35px;
+  font-size: 1.1rem;
+  background-color: #ff6600;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #cc5200;
+}
+
+/* Scroll Animations */
+.scroll-section {
+  opacity: 0;
+  transform: translateY(50px); /* Offset before appearing */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-section.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .word-top{
+    width: 60%;
+  }
+  .word-top h1{
+    font-size: 30px;
+  }
+  .word-top p{
+    font-size: 15px;
+  }
+  .choose-grid,
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  .learn-more-btn {
+    padding: 8px 20px;
+    font-size: 1rem;
+  }
+
+  .choose-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .event-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .testimonial img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .cta-button {
+    padding: 10px 30px;
+    font-size: 1rem;
+  }
+}

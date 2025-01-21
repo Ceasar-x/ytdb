@@ -1,0 +1,102 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.contact-container {
+  position: relative;
+  top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.get-in-touch,
+.contact-form,
+.map {
+  flex: 1 1 300px;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.get-in-touch p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.icon {
+  color: #007bff;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+.map iframe {
+  border: none;
+  border-radius: 8px;
+}
+
+/* Slide-in Animation */
+.slide-in {
+  opacity: 0;
+  transform: translateY(50px); /* Start off-screen */
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.slide-in.visible {
+  opacity: 1;
+  transform: translateY(0); /* Slide into view */
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .get-in-touch,
+  .contact-form,
+  .map {
+    flex: 1 1 100%;
+  }
+}

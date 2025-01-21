@@ -1,0 +1,118 @@
+/* About.css */
+
+.about-container {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.about-header {
+  background-image: url("../../assets/back2.jpg");
+  background-size: cover;
+  height: 600px;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  align-content: center;
+  padding: 2rem;
+  position: relative;
+  top: 95px;
+}
+
+.about-header h1 {
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
+}
+.school-history{
+  margin: 120px auto 0px;
+  padding: 2rem;
+  
+  max-width: 1200px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.mission-vision, .achievements, .principal-message, .gallery1 {
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 1200px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #4CAF50;
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+.mission-vision {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.mission, .vision {
+  flex: 1;
+  min-width: 280px;
+}
+
+.achievements ul {
+  list-style: none;
+  padding: 0;
+}
+
+.achievements li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.achievements li::before {
+  content: '\2022';
+  color: #4CAF50;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.principal-details {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.principal-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #4CAF50;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-footer {
+  text-align: center;
+  background: #4CAF50;
+  color: white;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
